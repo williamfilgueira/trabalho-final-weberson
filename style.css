@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/*IMPORTANDO FONT */
+
+body,
+ul,
+li,
+p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(105, 105, 105);
+}
+
+
+/* resetando meu documento*/
+
+
+/* INICIO DA ESTILIZAÇÃO DO HEADER*/
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #7e570a;
+    height: 62px;
+    background-color: #FBC459;
+}
+
+.menu {
+    display: flex;
+    margin-left: 100px;
+}
+
+
+/* IMG DA LOGO */
+
+#logo {
+    margin-left: 20px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+a {
+    text-decoration: none;
+    /* retirando a decoração dos links de navegação*/
+}
+
+
+/* LISTA MENU */
+
+.menu li {
+    margin: 10px;
+}
+
+
+/* LINK LISTA MENU */
+
+.menu li a {
+    display: flex;
+    margin-right: 70px;
+    padding: 10px;
+    transition: 0.5s;
+    color: black;
+    text-shadow: 2px 2px 2px white;
+}
+
+.menu li a:hover {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+
+/* INICIO CONTAINER */
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/* iNICIO BOX-PAE */
+
+.box-pai {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+/* INICIO IMG COM ZOOM */
+
+.titulo {
+    display: flex;
+    height: 300px;
+    width: 100%;
+    flex-flow: column nowrap;
+    justify-content: left;
+}
+
+div.img-zoom {
+    height: 0;
+}
+
+.text-zoom {
+    color: black;
+    padding: 10px;
+    text-shadow: 1px 1px 2px #FBC459;
+    font-size: 30px;
+    transition: 1.5s;
+}
+
+.text-zoom:hover {
+    transform: scale(1.2);
+    text-shadow: 2px 2px 10px black;
+    color: rgb(255, 255, 255);
+}
+
+
+/* BOX-CONTAINER */
+
+.box-container {
+    border-top: 1px solid rgb(231, 216, 216);
+    margin-top: 100px;
+    background-color: white;
+    height: 500px;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/*INICIO BOX-FILHA*/
+
+.box-filha {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border: 1px solid #fcf0d8;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 1px 1px 2px #f8deab;
+    transition: 0.5s;
+}
+
+
+/* EFEITO DE ZOOM NA IMG */
+
+.box-filha:hover {
+    transform: scale(1.2);
+    transform: scaleX(0.5%);
+    overflow: hidden;
+    transition: ease-in-out 0.7s;
+}
+
+
+/**ARREDONDANDO CANTOS DA IMG1*/
+
+#img1 {
+    border-radius: 15px;
+}
+
+#img2 {
+    border-radius: 15px;
+}
+
+#img3 {
+    border-radius: 15px;
+}
+
+
+/* BOX-TEXT */
+
+.box-text {
+    padding: 40px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/* RODAPÉ */
+
+.container {
+    border-top: 1px solid silver;
+    padding: 15px;
+    height: 110px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: #FBC459;
+    background-image: url(imgs/padrao-fundo-rodape.png);
+    background-repeat: space;
+}
+
+#logo-rodape {
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 30px;
+    background-color: #FBC459;
+    border: 1px solid rgb(248, 189, 28);
+    box-shadow: 2px 2px 4px #f3c363;
+}
+
+.redes-sociais {
+    margin: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.redes-sociais>b>p {
+    text-shadow: 2px 2px 2px black;
+    color: rgb(248, 245, 242);
+    margin-bottom: 10px;
+    margin-right: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.redes-sociais>b>p:hover {
+    color: #f3c363;
+}
+
+#instagram {
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+#facebook {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.creditos>a>p {
+    font-size: 15px;
+    margin-top: 60px;
+    transition: 0.5s;
+}
+
+.creditos>a>p:hover {
+    color: white;
+}
+
+
+/* SOBRE NOS********************/
+
+.titulo {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.box1 {
+    padding: 40px;
+    display: flex;
+}
+
+.box1>img {
+    justify-content: space-around;
+    width: 200px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+
+/************FIM SOBRE NOS*************/
+
+
+/********* CONTATO ********/
+
+.flex-pai {
+    display: flex;
+    flex-flow: column wrap;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #cab58b;
+    box-shadow: 2px 3px 4px silver;
+    width: 500px;
+    text-align: left;
+    height: 350px;
+    border-radius: 20px;
+}
+
+input {
+    border: 1px solid;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px silver;
+}
+
+.linha-1 {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 20px;
+}
+
+.form-nome {
+    margin-right: 20px;
+}
+
+.linha-2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.form-senha {
+    margin-right: 20px;
+}
+
+.linha-3 {
+    display: flex;
+    margin-top: 20px;
+}
+
+.linha-4 {
+    margin: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#text-area {
+    width: 350px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px silver;
+}
+
+
+/* AREA DOS BOTOES*/
+
+#btn-salvar {
+    border-style: none;
+    height: 20px;
+    margin-right: 0px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#btn-cancelar {
+    border-style: none;
+    height: 20px;
+    margin-right: 0px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#btn-salvar:hover {
+    color: white;
+    background-color: #f3c363;
+}
+
+#btn-cancelar:hover {
+    color: white;
+    background-color: #f3c363;
+}
